@@ -4,6 +4,6 @@
 * @param x    value at which to evaluate the rational function
 * @return     evaluated rational function
 */
-static {{dtype}} {{fname}}() {
-	return {{ratio}};
+static float rational123() {
+	return -1.0f / 0.0f;
 }

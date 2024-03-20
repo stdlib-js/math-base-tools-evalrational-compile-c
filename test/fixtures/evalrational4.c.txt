@@ -11,26 +11,26 @@
 * @param x    value at which to evaluate the rational function
 * @return     evaluated rational function
 */
-static {{dtype}} {{fname}}( const {{dtype}} x ) {
-	{{dtype}} ax;
-	{{dtype}} ix;
-	{{dtype}} s1;
-	{{dtype}} s2;
-	if ( x == 0.0{{dtype_suffix}} ) {
-		return {{ratio}};
+static double evalrational( const double x ) {
+	double ax;
+	double ix;
+	double s1;
+	double s2;
+	if ( x == 0.0 ) {
+		return -1.0 / 0.0;
 	}
-	if ( x < 0.0{{dtype_suffix}} ) {
+	if ( x < 0.0 ) {
 		ax = -x;
 	} else {
 		ax = x;
 	}
-	if ( ax <= 1.0{{dtype_suffix}} ) {
-		s1 = {{P_ASCENDING}};
-		s2 = {{Q_ASCENDING}};
+	if ( ax <= 1.0 ) {
+		s1 = -1.0 + (x * (2.5 + (x * (3.14 + (x * -1.0)))));
+		s2 = 0.0 + (x * (-3.5 + (x * (2.2 + (x * 1.25)))));
 	} else {
-		ix = 1.0{{dtype_suffix}} / x;
-		s1 = {{P_DESCENDING}};
-		s2 = {{Q_DESCENDING}};
+		ix = 1.0 / x;
+		s1 = -1.0 + (ix * (3.14 + (ix * (2.5 + (ix * -1.0)))));
+		s2 = 1.25 + (ix * (2.2 + (ix * (-3.5 + (ix * 0.0)))));
 	}
 	return s1 / s2;
 }
