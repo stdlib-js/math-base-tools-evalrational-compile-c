@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-tools-evalrational-compile-c",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Compile a C function for evaluating a rational function.",
   "license": "Apache-2.0",
   "author": {
