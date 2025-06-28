@@ -16,12 +16,23 @@
 
 <!-- /.bug-fixes -->
 
+<section class="reverts">
+
+### Reverts
+
+-   [`6c22949`](https://github.com/stdlib-js/stdlib/commit/6c22949a73493c90e4b814373ab8d8600395c5fd) - fix: correct variable name typo in hornerDescending function
+
+</section>
+
+<!-- /.reverts -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`6c22949`](https://github.com/stdlib-js/stdlib/commit/6c22949a73493c90e4b814373ab8d8600395c5fd) - **revert:** fix: correct variable name typo in hornerDescending function _(by Athan Reines)_
 -   [`0ee3577`](https://github.com/stdlib-js/stdlib/commit/0ee35771247780049a0eb19c1c9ceaa914b07efd) - **fix:** correct variable name typo in hornerDescending function _(by Philipp Burckhardt)_
 
 </details>
@@ -34,8 +45,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Philipp Burckhardt
 
 </section>
